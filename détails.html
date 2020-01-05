@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Avalon</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Acme" rel="stylesheet">
+  <link rel="icon" href="images\flame.png">
+</head>
+<style>
+  body {
+    padding: 0 1em;
+    font-family: 'Roboto',sans-serif;
+  }
+  h1 {
+    color: #494ca2;
+  }
+  ul {
+    margin-top: -0.5em;
+  }
+  li {
+    margin-bottom: 0.5em;
+  }
+  ol {
+    margin-top: 0.5em;
+  }
+</style>
+
+<body>
+  <h1>Projet</h1>
+
+  <section>
+    <h2>Fichier HTML</h2>
+      <p>Le premier fichier <strong>index.html</strong> divisé en deux sections :</p>
+      <ul>
+        <li>La première section regroupe le menu et les offres spéciales en promotions.</li>
+          <ol>
+            <li>utilisation de <strong>div</strong> pour regrouper les éléments du menu.</li>
+            <li>L'élément <strong>fieldset</strong> pour regrouper les éléments d'un produit et mettre des légendes.</li>
+            <li>A chaque div, on associe une classe pour pouvoir modifier dans la feuille de style.</li>
+            <li><strong>strike</strong> pour barrer du texte</li>
+          </ol>
+        <li>La deuxième section regroupe la barre de recherche, de navigation, le produit du jour, les messages du site, et les différents produits.</li>
+        <ol>
+          <li>Accueil contient un lien vers la page d'accueil.</li>
+          <li>Panier contient un sous-menu des différentes actions.</li>
+          <li>Produit du jour (Galaxy Fold) avec un lien pour le bouton Acheter. <strong>REMARQUE : SEUL CE PRODUIT A UNE DESCRIPTION DETAILLEE, UTILISEZ-LE LORS DES TESTS.</strong></li>
+          <li>Une fois le produit selectionné, le bouton Ajouter au panier renvoie vers un autre fichier HTML avec un bouton Retirez du panier, celui-ci renvoie vers la page d'accueil.</li>
+        </ol>
+
+        <li>Une dernière partie pour le pied de page qui contient des informations , liens vers dautre documents.</li>
+      </ul>
+  </section>
+  <section>
+    <h2>Feuille de style CSS</h2>
+    <ul>
+      <li>Selecteur universel * pour selectionner tous les éléments HTML, on met margin et padding à 0 pour ne plus avoir d'espace.</li>
+      <li>Pour les sections, on fixe display : flex, tous les enfants seront de type flex, donc n'est plus considéré comme un élément inline ou bloc. Le z-index permet de configurer un ordre, ainsi lorsque deux élements se chevauchent, le z-index le plus élévé sera au dessus.</li>
+      <li>Pour les différents éléments, on fixe les dimensions avec : width, height, padding, margin. Les unités utilisés sont : px, vh (% de la hauteur de la fenêtre), vw (% de la largeur de la fenêtre), %</li>
+      <li>font-family pour la police, color et background-color pour les couleurs, text-align: center pour centrer le texte.</li>
+      <li>Menu afficher en block avec display : block.</li>
+      <li>:hover permet de spécifier l'apparence d'un élément au moment où l'utilisateur le survole avec le pointeur, sans nécessairement l'activer.</li>
+      <li>cursor : pointer, pour changer le pointeur de la souris au passage sur l'élément.</li>
+      <li>display: inline-block, pour créer des blocks qui s'adaptent à la largeur du navigateur, plus facile à utiliser que float. Inline-block permet de mettre les éléments en ligne tout en conservant les caractéristiques du block, on peut modifier la hauteur, largeur ...</li>
+      <li>position: absolute, les propiétées de position de l'élément se fait par rapport à son ancêtre.</li>
+      <li>position: relative, les propriétés de position de l'élément se font directement sur l'élément, top/bottom pour le décalge vertical et left/right pour le décalage horizontale.</li>
+      <li><strong>.section1 .Special fieldset:nth-child(2) .img1</strong> : les changements vont se faire sur l'élement de classe img1 qui a comme ancêtre le deuxième fieldset qui a lui-même pour ancêtre Special et lui-même section1.</li>
+      <li>Fiche technique du produit, sous forme de tableau, on utilise # pour le selecteur id. #galaxy tr:nth-child(even) sélectionne les éléments pairs(2,4,6...) tr qui ont un ancêtre id="galaxy".</li>
+      <li>Responsive CSS : on définit une largeur maximal de 1028px, en dessous de cette largeur, les propriétés que l'on a définit prennent la place des propriétés initiales.</li>
+    </ul>
+  </section>
+
+</body>
+
+</html>
