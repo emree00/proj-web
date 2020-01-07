@@ -1,7 +1,7 @@
 ## IMPORTANT
-Utiliser le produit Samsung Galaxy Fold uniquement pour tester, tous les liens des produits renvoient vers celui-ci.
-"Qui sommes nous" renvoie vers presentation.html
-"Détails techniques" vers détails.html
+Utiliser le produit Samsung Galaxy Fold uniquement pour tester, tous les liens des produits renvoient vers celui-ci.</br>
+"Qui sommes nous" renvoie vers presentation.html</br>
+"Détails techniques" vers détails.html</br>
 
 ## SOURCE
 Police : google font</br>
