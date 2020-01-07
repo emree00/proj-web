@@ -1,8 +1,5 @@
-# Projet-Web
-Projet Web HTML/CSS : maquette de site de vente en ligne
-
 ## IMPORTANT
-Utiliser le produit Samsung Galaxy Fold uniquement pour tester.
+Utiliser le produit Samsung Galaxy Fold uniquement pour tester, tous les liens des produits renvoient vers celui-ci.
 
 ## SOURCE
 Police : google font</br>
